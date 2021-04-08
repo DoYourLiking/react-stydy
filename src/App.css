@@ -36,3 +36,31 @@
     transform: rotate(360deg);
   }
 }
+.virtual-List{
+	position: relative;
+    height: 600px;
+    overflow: auto;
+    border: 1px solid #ddd;
+}
+.virtual-List-height {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.view-content {
+	position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.view-item {
+    box-sizing: border-box;
+    padding: 0 5px;
+    height: 40px;
+    line-height: 30px;
+}
+
