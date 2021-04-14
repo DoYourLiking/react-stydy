@@ -1,0 +1,27 @@
+.banner-image {
+  display: inline-block;
+  width: 300px;
+  height: 500px;
+}
+.banner {
+  overflow: hidden;
+  position: relative;
+  /* 此写法兼容移动端和PC端 */
+  width: 600px;
+  height: 500px;
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+.banner-image-wrapper {
+  display: inline-block;
+  height: 500px;
+}
+.banner-control {
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+  position: absolute;
+  left: -450px;
+  /* transform: translate(-450px); */
+  transition: transform linear 300ms;
+}
