@@ -9,6 +9,11 @@ function App() {
   let imgList = [
     {
       src:
+        "https://dss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2410960174,2438680211&fm=26&gp=0.jpg",
+      alt: "image--1",
+    },
+    {
+      src:
         "https://dss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1242620113,3485135282&fm=26&gp=0.jpg",
       alt: "image-0",
     },
@@ -37,16 +42,20 @@ function App() {
         "https://dss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2409223494,1882453675&fm=26&gp=0.jpg",
       alt: "image-5",
     },
+    {
+      src:
+        "https://dss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=130745297,1952331828&fm=26&gp=0.jpg",
+      alt: "image-6",
+    },
   ];
   useEffect(() => {});
   return (
     <div className="App">
       <Banner
         imgList={imgList}
-        autoTime={2000}
+        autoTime={1000}
         autoPlay={true}
         isNeedDot={false}
-        hasArrow={false}
         width={300}
         speed={300}
       />
