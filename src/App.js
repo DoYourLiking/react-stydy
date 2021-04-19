@@ -1,9 +1,9 @@
-import React from "react";
-import logo from "./logo.svg";
+
 import "./App.css";
 import { useEffect, useState, useRef } from "react";
 // import VersionList from "./components/versionList"
 import Banner from "./components/banner";
+import Menu from "./components/menu";
 
 function App() {
   let imgList = [
@@ -54,10 +54,44 @@ function App() {
       <Banner
         imgList={imgList}
         autoTime={1000}
-        autoPlay={true}
+        autoPlay={false}
         isNeedDot={false}
         width={300}
         speed={300}
+      />
+      <Menu
+        content={{
+          name:'0',
+          children:  [
+            {
+              name: "1",
+              children: [
+                { name: "1-1" },
+                {
+                  name: "1-2",
+                  children: [{ name: "1-2-1" }, { name: "1-2-2" }],
+                },
+              ],
+            },
+            {
+              name: "2",
+              children: [
+                { name: "2-1" },
+                {
+                  name: "2-2",
+                  children: [{ name: "2-2-1" }, { name: "2-2-2" }],
+                },
+              ],
+            },
+            {
+              name: "3",
+              children: [
+                { name: "3-1" },
+                { name: "3-2", children: [{ name: "3-2-1" }, { name: "3-2-2" }] },
+              ],
+            }
+          ]        
+        }}
       />
     </div>
   );

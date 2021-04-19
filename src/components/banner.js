@@ -8,7 +8,6 @@ const Banner = function (props) {
   let len = imgList.length;
   let ref = useRef(null);
   let [x, setX] = useState(0);
-
   useEffect(() => {
     setMoveDistance();
   }, [index]);
@@ -18,7 +17,7 @@ const Banner = function (props) {
     if (props.autoPlay) {
       //自动轮播
       timer = setInterval(() => {
-        ref.current.style.transitionProperty = "all";//这一步必要的，因为一开始react会置为none,导致后续的动画结束事件无法被监听，导致无法回复原来的位置
+        ref.current.style.transitionProperty = "all"; //这一步必要的，因为一开始react会置为none,导致后续的动画结束事件无法被监听，导致无法回复原来的位置
         setIndex((index) => index + 1);
       }, props.autoTime);
     }
@@ -88,7 +87,7 @@ const Banner = function (props) {
                 className="banner-image"
                 src={item.src}
                 alt={item.alt}
-                draggable="false"//这个是取消darg事件导致的不能复原
+                draggable="false" //这个是取消darg事件导致的不能复原
               />
             </div>
           );

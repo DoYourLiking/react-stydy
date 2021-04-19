@@ -1,0 +1,19 @@
+.menu-li{
+    background: rgb(84, 92, 100);
+    color: white;
+    outline: none;
+    margin: 5px 0;
+    list-style: none;
+   
+}
+.all-menu{
+    background-color:rgb(84, 92, 100) ;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.menu-title{
+    color: white;
+}
+.all{
+}
